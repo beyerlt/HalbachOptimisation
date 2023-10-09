@@ -1,0 +1,17 @@
+#import random
+#import createBore
+import numpy as np
+#import time
+#import constants.py
+
+# objective function
+
+gradrad = 12.5
+DSV = 200*1e-3
+
+arm = 16
+numRings = 10 #num of rings looking to optimize
+ringSep = 0.025
+magLen = (numRings - 1) * ringSep
+ringPos = np.linspace(-magLen/2, magLen/2, numRings)
+
